@@ -96,8 +96,5 @@ LRUCache.prototype.remove = function(key) {
     this.size--;
 };
 
-// exports.Cache = LRUCache;
+module.exports = LRUCache;
 
-exports.printMsg = function() {
-    console.log("This is a message from the demo package");
-  }
