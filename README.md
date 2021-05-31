@@ -11,6 +11,9 @@
 3. `LRUCache.remove(key)` : Removes a key value pair, if present
 
 ## Implementation
+```
+npm i lru-cache-js-map
+```
 
 ```
 const LRUCache = require('lru-cache-js-map');
