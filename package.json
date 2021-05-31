@@ -1,62 +1,30 @@
 {
-  "name": "lru-cache",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@metamodules/postgres": "^1.2.1",
-    "deploy-node-app": "^1.4.3",
-    "dotenv": "^8.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
-  },
-  "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.19.1",
-    "babel-eslint": "10.0.1",
-    "cross-spawn": "^6.0.5",
-    "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-flowtype": "2.50.1",
-    "eslint-plugin-import": "2.16.0",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "prettier": "^1.17.1"
-  },
+  "name": "lru-cache-js-map",
+  "version": "1.0.1",
+  "description": "An implementation of LRU Cache using Doubly Linked Lists and Maps with O(1) read and write time.",
+  "main": "index.js",
   "scripts": {
-    "start": "bash bin/dev.sh",
-    "build": "react-scripts build",
-    "deploy": "deploy-node-app",
-    "test": "react-scripts test",
-    "eject-www": "react-scripts eject",
-    "psql": "export $(cat .env | xargs) && PGPASSWORD=${POSTGRES_PASSWORD} psql -h ${POSTGRES_SERVICE_HOST} -p ${POSTGRES_SERVICE_PORT} -U ${POSTGRES_USER} ${POSTGRES_DB}"
+    "test": "node test"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahtrahdis7/lru-cache-js.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
+  "dependencies": {
+  },
+  "keywords": [
+    "LRU",
+    "Cache",
+    "Cache",
+    "Javascript",
+    "LRU",
+    "Caching",
+    "Implementaiton"
   ],
-  "deploy-node-app": {
-    "prod": {
-      "port": 4000,
-      "protocol": "http",
-      "entrypoint": "src/api/index.js",
-      "type": "spa"
-    },
-    "dev": {
-      "port": 4000,
-      "protocol": "http",
-      "entrypoint": "src/api/index.js",
-      "registry": "",
-      "type": "spa",
-      "isPublic": false
-    }
+  "author": "Sidhartha Mallick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahtrahdis7/lru-cache-js/issues"
   },
-  "proxy": "http://localhost:4000"
+  "homepage": "https://github.com/ahtrahdis7/lru-cache-js#readme"
 }
