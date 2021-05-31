@@ -49,11 +49,11 @@ LRUCache.prototype.get = function(key) {
 LRUCache.prototype.put = function(key, value) {
 
     if(!this.head){
-    this.head = this.tail = new Node(key, value);
+        this.head = this.tail = new Node(key, value);
     }else{
-    const node = new Node(key, value, this.head);
-    this.head.prev = node;
-    this.head = node;
+        const node = new Node(key, value, this.head);
+        this.head.prev = node;
+        this.head = node;
     }
 
     //Update the cache map
@@ -82,16 +82,17 @@ LRUCache.prototype.remove = function(key) {
     // console.log(node)
     
     if(node.prev !== null){
-    node.prev.next = node.next;
+        node.prev.next = node.next;
     }else{
-    this.head = node.next;
+        this.head = node.next;
     }
     
     if(node.next !== null){
-    node.next.prev = node.prev;
+        node.next.prev = node.prev;
     }else{
-    this.tail = node.prev
+        this.tail = node.prev
     }
+    
     delete this.cache[key];
     this.size--;
 };
