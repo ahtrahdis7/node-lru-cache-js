@@ -26,3 +26,7 @@ for(var i=0; i < 100; i++){
 
 console.log(cache)
 ```
+
+If you find this piece of work interesting, dont forget to give a star on github. <br>
+GITHUB : https://github.com/ahtrahdis7/lru-cache-js
+## ! Happy Coding !
