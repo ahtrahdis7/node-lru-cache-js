@@ -9,7 +9,7 @@
 1. `LRUCache.put(key, value)` : Add a key-value pair using this method.
 2. `LRUCache.get(key)`  : Returns the value for the key if present or returns `-1` if not.
 3. `LRUCache.remove(key)` : Removes a key value pair, if present
-4. `LRUCache.getCache()` : Fetches all the contents of the cache as JSON.
+4. `LRUCache.getCache()` : Fetches all the contents of the cache as a JSON Object.
 
 ## Implementation
 ```

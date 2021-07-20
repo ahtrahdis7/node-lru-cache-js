@@ -1,6 +1,6 @@
 {
   "name": "lru-cache-js-map",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An implementation of LRU Cache using Doubly Linked Lists and Maps with O(1) read and write time.",
   "main": "index.js",
   "scripts": {
