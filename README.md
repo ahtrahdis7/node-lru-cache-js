@@ -9,6 +9,7 @@
 1. `LRUCache.put(key, value)` : Add a key-value pair using this method.
 2. `LRUCache.get(key)`  : Returns the value for the key if present or returns `-1` if not.
 3. `LRUCache.remove(key)` : Removes a key value pair, if present
+4. `LRUCache.getCache()` : Fetches all the contents of the cache as JSON.
 
 ## Implementation
 ```
@@ -18,7 +19,7 @@ npm i lru-cache-js-map
 ```
 const LRUCache = require('lru-cache-js-map');
 
-var cache = new LRU(100);
+var cache = new LRUCache(100);
 
 for(var i=0; i < 100; i++){
     cache.put(Math.floor(Math.random()*10), Math.random()*10000);

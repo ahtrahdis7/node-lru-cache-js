@@ -97,5 +97,13 @@ LRUCache.prototype.remove = function(key) {
     this.size--;
 };
 
+LRUCache.prototype.getCache = function() {
+    let contents = {};
+    for(let key in this.cache){
+        contents[key] = this.cache[key].value;
+    }
+    return contents; 
+}
+
 module.exports = LRUCache;
 
