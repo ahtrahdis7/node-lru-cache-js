@@ -1,16 +1,17 @@
 {
   "name": "lru-cache-js-map",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "An implementation of LRU Cache using Doubly Linked Lists and Maps with O(1) read and write time.",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "mocha lru.test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ahtrahdis7/lru-cache-js.git"
   },
   "dependencies": {
+    "mocha": "^9.1.1"
   },
   "keywords": [
     "LRU",

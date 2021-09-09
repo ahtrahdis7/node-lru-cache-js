@@ -32,6 +32,7 @@ LRUCache.prototype.get = function(key) {
 
         // node removed from it's position and cache
         this.remove(key)
+
         // this.size--;
         // write node again to the head of LinkedList to make it most recently used
         this.put(key, value);
@@ -111,6 +112,22 @@ LRUCache.prototype.getKeysOfValue = function(val){
     for(let i in this.cache){
         if(this.cache[i].value === val)
             keys.push(this.cache[i].key)
+    }
+    return keys;
+}
+
+LRUCache.prototype.getAllValues = function(){
+    let values = [];
+    for(let i in this.cache){
+        values.push(this.cache[i].value)
+    }
+    return values;
+}
+
+LRUCache.prototype.getAllKeys = function(){
+    let keys = [];
+    for(let i in this.cache){
+        keys.push(this.cache[i].key)
     }
     return keys;
 }

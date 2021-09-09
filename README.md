@@ -4,6 +4,8 @@
 1. Queue which is implemented using a doubly linked list. The maximum size of the queue will be equal to the total number of frames available (cache size). The most recently used pages will be near front end and least recently pages will be near the rear end. 
 2. A Hash with page number as key and address of the corresponding queue node as value.
 
+### If you find this piece of work interesting, dont forget to give a `star` on github.
+
 ## Methods
 
 1. `LRUCache.put(key, value)` : Add a key-value pair using this method.
@@ -11,6 +13,8 @@
 3. `LRUCache.remove(key)` : Removes a key value pair, if present
 4. `LRUCache.getCache()` : Fetches all the contents of the cache as a JSON Object.
 5. `LRUCache.getKeysOfValue(val)` : Fetches all the keys with the provided value.
+6. `LRUCache.getAllValues()` : Fetches all the values present in the Cache.
+7. `LRUCache.getAllKeys()` : Fetches all the keys present in the Cache.
 
 ## Implementation
 ```
@@ -29,6 +33,5 @@ for(var i=0; i < 100; i++){
 console.log(cache)
 ```
 
-If you find this piece of work interesting, dont forget to give a star on github. <br>
-GITHUB : https://github.com/ahtrahdis7/lru-cache-js
+
 ## ! Happy Coding !
